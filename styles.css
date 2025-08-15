@@ -581,6 +581,7 @@ body {
     transform: scale(1);
     min-width: 16px;
     min-height: 16px;
+    cursor: pointer;
 }
 
 .form-actions {
@@ -696,6 +697,31 @@ body {
         transform: scale(0.9);
         min-width: 14px;
         min-height: 14px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .storing-title {
+        font-size: 2rem;
+    }
+    
+    .storing-form {
+        padding: 1.5rem;
+    }
+    
+    .btn-emergency {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
 
