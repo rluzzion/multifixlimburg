@@ -694,9 +694,9 @@ body {
     }
     
     .checkbox-label input[type="checkbox"] {
-        transform: scale(0.9);
-        min-width: 14px;
-        min-height: 14px;
+        transform: scale(0.8);
+        min-width: 12px;
+        min-height: 12px;
     }
     
     .hero-title {
