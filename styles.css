@@ -33,19 +33,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     position: relative;
     width: 100%;
-    min-height: 80px;
-    padding: 1rem 0;
+    min-height: auto;
+    padding: 1.5rem 0;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .logo-text h1 {
@@ -74,9 +76,10 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .nav-link {
@@ -84,9 +87,9 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .nav-link:hover {
@@ -99,15 +102,16 @@ body {
     color: #7f1d1d;
     font-weight: 600;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
     border: 1px solid rgba(239, 68, 68, 0.2);
     transition: all 0.3s ease;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     white-space: nowrap;
-    flex: 0 0 auto;
     text-align: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 .emergency-link:hover {
@@ -651,6 +655,37 @@ body {
 
 /* Base styles are already mobile-first */
 
+/* Small mobile screens */
+@media (max-width: 480px) {
+    .header-content {
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.8rem;
+    }
+    
+    .logo-image {
+        height: 40px;
+    }
+    
+    .nav-link {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .emergency-link {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+        max-width: 250px;
+    }
+}
+
 /* Tablet and larger screens */
 @media (min-width: 768px) {
     .header-content {
@@ -700,6 +735,20 @@ body {
     .overmij-content {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
+    }
+    
+    .logo {
+        width: auto;
+        justify-content: flex-start;
+    }
+    
+    .emergency-link {
+        width: auto;
+        max-width: none;
+    }
+    
+    .nav-list {
+        width: auto;
     }
     
     .contact-content {
