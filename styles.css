@@ -1173,20 +1173,8 @@ body {
     }
 }
 
-/* Mobile phones only - sticky footer */
+/* Mobile phones only - call button adjustments */
 @media (max-width: 480px) {
-    body {
-        padding-bottom: 120px; /* Space for sticky footer on mobile only */
-    }
-    
-    .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
-    
     .sticky-call-button {
         bottom: 15px;
         right: 15px;
