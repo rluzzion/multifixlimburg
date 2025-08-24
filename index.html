@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multifix Limburg</title>
+    <title>Multifix Limburg - Professionele Elektrotechniek in Maastricht | 24/7 Storingsdienst</title>
+    <meta name="description" content="Multifix Limburg biedt professionele elektrotechniek diensten in Maastricht en omgeving. 24/7 storingsdienst, installatie, reparatie en onderhoud. Gratis offerte!">
+    <meta name="keywords" content="elektricien maastricht, elektrotechniek limburg, storingsdienst 24/7, elektrische reparatie, groepenkast vervangen, buitenstroom installeren, tuinverlichting">
+    <meta name="author" content="Multifix Limburg">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://multifixlimburg.nl/">
+    <meta property="og:title" content="Multifix Limburg - Professionele Elektrotechniek in Maastricht">
+    <meta property="og:description" content="Professionele elektrotechniek diensten in Maastricht en omgeving. 24/7 storingsdienst, installatie, reparatie en onderhoud.">
+    <meta property="og:image" content="https://multifixlimburg.nl/bedrijfslogo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://multifixlimburg.nl/">
+    <meta property="twitter:title" content="Multifix Limburg - Professionele Elektrotechniek in Maastricht">
+    <meta property="twitter:description" content="Professionele elektrotechniek diensten in Maastricht en omgeving. 24/7 storingsdienst, installatie, reparatie en onderhoud.">
+    <meta property="twitter:image" content="https://multifixlimburg.nl/bedrijfslogo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://multifixlimburg.nl/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Multifix Limburg",
+        "description": "Professionele elektrotechniek diensten in Maastricht en omgeving",
+        "url": "https://multifixlimburg.nl",
+        "telephone": "+31611174659",
+        "email": "info@multifixlimburg.nl",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kerkstraat 10",
+            "addressLocality": "Maastricht",
+            "postalCode": "6221 XH",
+            "addressRegion": "Limburg",
+            "addressCountry": "NL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "50.8513",
+            "longitude": "5.6909"
+        },
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "priceRange": "€€",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "50.8513",
+                "longitude": "5.6909"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Elektrotechniek Diensten",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "24/7 Storingsdienst"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Elektrische Installatie"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Groepenkast Vervangen"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -19,13 +108,12 @@
                     </div>
                     <img src="bedrijfslogo.png" alt="Multifix Limburg Logo" class="logo-image">
                 </div>
-                <a href="storing.html" class="emergency-link">Storing? Klik hier voor directe hulp!</a>
-                <nav class="nav">
+                <nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
                     <ul class="nav-list">
-                        <li><a href="#home" class="nav-link">Home</a></li>
-                        <li><a href="#diensten" class="nav-link">Diensten</a></li>
-                        <li><a href="#overmij" class="nav-link">Over mij</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+                        <li><a href="overmij.html" class="nav-link">Over mij</a></li>
+                        <li><a href="storingsdienst.html" class="nav-link">Storingsdienst</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,22 +122,38 @@
 
     <!-- Main Content Section -->
     <main class="main">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+        <!-- Storing Block -->
+        <section class="storing-block" aria-labelledby="storing-title">
             <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Professionele elektrotechniek</h2>
-                    <p class="hero-subtitle">Landelijke dekking vanuit Limburg</p>
-                    <div class="hero-buttons">
-                        <a href="#diensten" class="btn btn-primary">Mijn diensten</a>
-                        <a href="#contact" class="btn btn-secondary">Offerte aanvragen</a>
+                <div class="storing-content">
+                    <h2 class="storing-title" id="storing-title">Heeft u storing?</h2>
+                    <p class="storing-subtitle">Ik ben 24/7 bereikbaar op dit nummer:</p>
+                    <div class="phone-number">
+                        <a href="tel:+31611174659" class="phone-link">+31 6 11174659</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Diensten Preview Section -->
-        <section id="diensten" class="diensten-preview">
+        <!-- Over mij Section -->
+        <section class="overmij-section">
+            <div class="container">
+                <div class="overmij-content">
+                    <div class="overmij-text">
+                        <h2 class="section-title">Over mij</h2>
+                        <p>Ik heb ruim drie jaar ervaring als elektricien en ik heb al veel verschillende werkzaamheden uitgevoerd. Ik heb ook al veel verschillende klanten gehad en ik heb al veel verschillende projecten uitgevoerd.</p>
+                        <p>Ruim 100 echte reviews bevestigen mijn 5-sterrenservice!</p>
+                        <a href="contact.html" class="btn btn-primary">Neem contact op</a>
+                    </div>
+                    <div class="overmij-image">
+                        <img src="profielfoto_placeholder.png" alt="Multifix Limburg - Elektricien" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diensten Section -->
+        <section class="diensten-section">
             <div class="container">
                 <h2 class="section-title">Mijn diensten</h2>
                 <div class="diensten-grid">
@@ -72,69 +176,60 @@
             </div>
         </section>
 
-        <!-- Over mij Preview Section -->
-        <section id="overmij" class="overmij-preview">
+        <!-- Customer Reviews Section -->
+        <section class="reviews-section">
             <div class="container">
-                <div class="overmij-content">
-                    <div class="overmij-text">
-                        <h2 class="section-title">Over mij</h2>
-                        <p>Ik heb ruim drie jaar ervaring als elektricien en ik heb al veel verschillende werkzaamheden uitgevoerd. Ik heb ook al veel verschillende klanten gehad en ik heb al veel verschillende projecten uitgevoerd.</p>
-                        <p>Ruim 100 echte reviews bevestigen mijn 5-sterrenservice!</p>
-                        <a href="#contact" class="btn btn-primary">Neem contact op</a>
-                    </div>
-                    <div class="overmij-image">
-                        <img src="profielfoto_placeholder.png" alt="Multifix Limburg - Elektricien" class="profile-image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Preview Section -->
-        <section id="contact" class="contact-preview">
-            <div class="container">
-                <h2 class="section-title">Neem contact op</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@multifixlimburg.nl">info@multifixlimburg.nl</a></p>
+                <h2 class="section-title">Wat klanten zeggen</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-platform">
+                                <span class="platform-icon">⭐</span>
+                                <span class="platform-name">Google</span>
                             </div>
+                            <div class="review-stars">★★★★★</div>
                         </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <div>
-                                <h4>Telefoon</h4>
-                                <p><a href="tel:+31611174659">+31 6 11174659</a></p>
-                            </div>
+                        <div class="review-content">
+                            <p>"Uitstekende service! Snel, professioneel en betrouwbaar. Aanrader!"</p>
                         </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <div>
-                                <h4>Postadres</h4>
-                                <p>Kerkstraat 10, 6221 XH Maastricht</p>
-                            </div>
-                        </div>
+                        <div class="review-author">- Jan Jansen</div>
                     </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Uw naam" required>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-platform">
+                                <span class="platform-icon">⭐</span>
+                                <span class="platform-name">Trustpilot</span>
                             </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Uw e-mailadres" required>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Zeer tevreden over de werkzaamheden. Netjes en op tijd!"</p>
+                        </div>
+                        <div class="review-author">- Maria de Vries</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-platform">
+                                <span class="platform-icon">⭐</span>
+                                <span class="platform-name">Google</span>
                             </div>
-                            <div class="form-group">
-                                <textarea placeholder="Uw bericht (waarmee kan ik u helpen?)" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Bericht versturen</button>
-                        </form>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Professionele elektricien die kwaliteit levert. Zeker een aanrader!"</p>
+                        </div>
+                        <div class="review-author">- Peter Bakker</div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Sticky Call Button -->
+    <a href="tel:+31611174659" class="sticky-call-button">
+        <span class="phone-icon">📞</span>
+        <span>Bel nu</span>
+    </a>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -147,10 +242,10 @@
                 <div class="footer-section">
                     <h4>Snelle links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#diensten">Diensten</a></li>
-                        <li><a href="#overmij">Over mij</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="overmij.html">Over mij</a></li>
+                        <li><a href="storingsdienst.html">Storingsdienst</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
