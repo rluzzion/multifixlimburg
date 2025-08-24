@@ -17,12 +17,16 @@ body {
     padding-bottom: 0; /* No padding needed for non-sticky footer */
     overflow-x: hidden;
     min-height: 100vh;
+    height: auto;
+    position: relative;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
+    height: auto;
 }
 
 /* Header Styles */
@@ -36,6 +40,7 @@ body {
     z-index: 1000;
     border-bottom: 1px solid rgba(251, 146, 60, 0.2);
     width: 100%;
+    height: auto;
 }
 
 .header-content {
@@ -134,6 +139,9 @@ body {
 .main {
     min-height: auto;
     overflow-x: hidden;
+    height: auto;
+    position: relative;
+    display: block;
 }
 
 /* Storing Block */
@@ -833,6 +841,18 @@ body {
 
 /* Small mobile screens */
 @media (max-width: 480px) {
+    body {
+        padding-top: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
     .header-content {
         gap: 1rem;
         padding: 1rem 0;
@@ -1188,6 +1208,22 @@ body {
         right: 15px;
         padding: 0.8rem 1.2rem;
         font-size: 0.8rem;
+    }
+    
+    .main {
+        height: auto;
+        min-height: auto;
+        overflow: visible;
+        position: relative;
+    }
+    
+    .storing-block,
+    .overmij-section,
+    .diensten-section,
+    .reviews-section {
+        height: auto;
+        min-height: auto;
+        overflow: visible;
     }
 }
 
